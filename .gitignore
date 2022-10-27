@@ -1,0 +1,10 @@
+pretrain_bert/data
+pretrain_bert/output
+data
+.ipynb_checkpoints
+*.ipynb
+commonsense_analysis/res
+embedding_analysis/res
+relation_analysis/res
+*/__pycache__/
+run.bash

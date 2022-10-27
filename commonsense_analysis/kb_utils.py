@@ -1,0 +1,82 @@
+conceptnet_relations = [
+    'AtLocation', 'CapableOf', 'Causes', 'CausesDesire',
+    'CreatedBy', 'DefinedAs', 'DesireOf', 'Desires', 'HasA',
+    'HasFirstSubevent', 'HasLastSubevent', 'HasPainCharacter',
+    'HasPainIntensity', 'HasPrerequisite', 'HasProperty',
+    'HasSubevent', 'InheritsFrom', 'InstanceOf', 'IsA',
+    'LocatedNear', 'LocationOfAction', 'MadeOf', 'MotivatedByGoal',
+    'NotCapableOf', 'NotDesires', 'NotHasA', 'NotHasProperty',
+    'NotIsA', 'NotMadeOf', 'PartOf', 'ReceivesAction', 'RelatedTo',
+    'SymbolOf', 'UsedFor'
+]
+
+
+split_into_words = {
+    'AtLocation': "at location",
+    'CapableOf': "capable of",
+    'Causes': "causes",
+    'CausesDesire': "causes desire",
+    'CreatedBy': "created by",
+    'DefinedAs': "defined as",
+    'DesireOf': "desire of",
+    'Desires': "desires",
+    'HasA': "has a",
+    'HasFirstSubevent': "has first subevent",
+    'HasLastSubevent': "has last subevent",
+    'HasPainCharacter': "has pain character",
+    'HasPainIntensity': "has pain intensity",
+    'HasPrerequisite': "has prequisite",
+    'HasProperty': "has property",
+    'HasSubevent': "has subevent",
+    'InheritsFrom': "inherits from",
+    'InstanceOf': 'instance of',
+    'IsA': "is a",
+    'LocatedNear': "located near",
+    'LocationOfAction': "location of action",
+    'MadeOf': "made of",
+    'MotivatedByGoal': "motivated by goal",
+    'NotCapableOf': "not capable of",
+    'NotDesires': "not desires",
+    'NotHasA': "not has a",
+    'NotHasProperty': "not has property",
+    'NotIsA': "not is a",
+    'NotMadeOf': "not made of",
+    'PartOf': "part of",
+    'ReceivesAction': "receives action",
+    'RelatedTo': "related to",
+    'SymbolOf': "symbol of",
+    'UsedFor': "used for"
+}
+
+atomic2020_relations = [
+    'oReact', 'oWant', 'xAttr', 'xEffect', 'xIntent', 'xNeed', 'xReact', 
+    'xWant', 'oEffect', 'AtLocation', 'ObjectUse', 'Desires', 'HasProperty', 
+    'NotDesires', 'Causes', 'HasSubEvent', 'xReason', 'CapableOf', 
+    'MadeUpOf', 'isAfter', 'isBefore', 'isFilledBy', 'HinderedBy'
+]
+
+atomic2020_templates = {
+    'ObjectUse': '<SUBJ> is used for <OBJ>',
+    'AtLocation': 'You are likely to find <SUBJ> in <OBJ>',
+    'MadeUpOf': '<SUBJ> is made up of <OBJ>',
+    'HasProperty': '<SUBJ> is <OBJ>',
+    'CapableOf': '<SUBJ> can <OBJ>',
+    'Desires': '<SUBJ> wants <OBJ>',
+    'NotDesires': '<SUBJ> does not want <OBJ>',
+    'isAfter': 'Something that happens after <SUBJ> is <OBJ>',
+    'HasSubEvent': 'Something you might do while <SUBJ> is <OBJ>',
+    'isBefore': 'Something that happens before <SUBJ> is <OBJ>',
+    'HinderedBy': '<SUBJ> is hindered by <OBJ>',
+    'Causes': 'Sometimes <SUBJ> causes <OBJ>',
+    'xReason': '<SUBJ>. The reason for PersonX doing this is <OBJ>',
+    'isFilledBy': '<SUBJ> can be filled by <OBJ>',
+    'xNeed': 'But before <SUBJ>, PersonX needed <OBJ>',
+    'xAttr': '<SUBJ> is seen as <OBJ>',
+    'xEffect': 'As a result of <SUBJ>, PersonX will <OBJ>',
+    'xReact': 'As a result of <SUBJ>, PersonX feels <OBJ>',
+    'xWant': 'After <SUBJ>, PersonX would want <OBJ>',
+    'xIntent': 'Because of <SUBJ>, PersonX wanted <OBJ>',
+    'oEffect': 'as a result of <SUBJ>, others will <OBJ>',
+    'oReact': 'as a result of <SUBJ>, others would feel <OBJ>',
+    'oWant': 'as a result of <SUBJ>, others would want <OBJ>',
+}
